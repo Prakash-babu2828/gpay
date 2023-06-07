@@ -1,0 +1,30 @@
+
+version: '3'
+services:
+  money:
+    image: prakashbabu28/moneyrepo:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  recharge:
+    image: prakashbabu28/rechargerepo:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
+
+  dth:
+    image: prakashbabu28/dthrepo:latest
+    ports:
+      - "93:80"
+    deploy:
+      replicas: 3
+
+  loan:
+    image: prakashbabu28/brandrepo:latest
+    ports:
+      - "94:80"
+    deploy:
+      replicas: 3
