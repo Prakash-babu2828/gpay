@@ -23,7 +23,7 @@ services:
       replicas: 3
 
   loan:
-    image: prakashbabu28/brandrepo:latest
+    image: prakashbabu28/loanrepo:latest
     ports:
       - "94:80"
     deploy:
